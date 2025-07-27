@@ -21,6 +21,8 @@ using namespace winrt::Windows::UI;
 using namespace winrt::Windows::UI::Xaml;
 using namespace winrt::Windows::Foundation;
 using namespace ::Microsoft::Console;
+static constexpr std::string_view DisableWordWrapKey{ "disableWordWrap" };
+JsonUtils::GetValueForKey(json, DisableWordWrapKey, _DisableWordWrap);
 
 static constexpr std::string_view UpdatesKey{ "updates" };
 static constexpr std::string_view NameKey{ "name" };

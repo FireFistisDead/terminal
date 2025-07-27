@@ -54,6 +54,7 @@ Author(s):
 #include "FontConfig.h"
 
 // fwdecl unittest classes
+GETSET_PROPERTY(bool, DisableWordWrap, false);
 namespace SettingsModelUnitTests
 {
     class DeserializationTests;

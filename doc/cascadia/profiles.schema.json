@@ -604,7 +604,13 @@
         },
         "profile": {
           "description": "Either the GUID or name of a profile to use, instead of launching the default",
-          "type": "string"
+          "type": "string",
+          "disableWordWrap": {
+                    "type": "boolean",
+                    "default": false,
+                    "description": "Disables automatic word wrap. Lines will not wrap to the next row."
+                  }
+
         },
         "index": {
           "type": "integer",
