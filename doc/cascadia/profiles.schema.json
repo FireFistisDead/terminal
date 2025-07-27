@@ -604,13 +604,8 @@
         },
         "profile": {
           "description": "Either the GUID or name of a profile to use, instead of launching the default",
-          "type": "string",
-          "disableWordWrap": {
-                    "type": "boolean",
-                    "default": false,
-                    "description": "Disables automatic word wrap. Lines will not wrap to the next row."
-                  }
-
+          "type": "string"
+          
         },
         "index": {
           "type": "integer",
@@ -2721,6 +2716,13 @@
           "minimum": 0,
           "type": "number"
         },
+
+       "disableWordWrap": {
+       "type": "boolean",
+       "default": false,
+       "description": "Disables automatic word wrap. Lines will not wrap to the next row."
+       },
+
         "antialiasingMode": {
           "default": "grayscale",
           "description": "Controls how text is antialiased in the renderer. Possible values are \"grayscale\", \"cleartype\" and \"aliased\". Note that changing this setting will require starting a new terminal instance.",
